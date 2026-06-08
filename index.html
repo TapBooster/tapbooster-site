@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>TapBooster — Plus d'avis Google pour les commerces de La Réunion</title>
+<meta name="description" content="Vos clients sont déjà satisfaits. TapBooster les aide à laisser un avis Google depuis votre comptoir, en quelques secondes. Plaque NFC + QR, livrée et installée à La Réunion, sans abonnement.">
+<!-- Open Graph (partages WhatsApp/Meta). ⚠️ Au lancement : og:url + og:image en URL ABSOLUE (https://www.tapbooster.re/...) et idéalement une image dédiée 1200×630. -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="TapBooster">
+<meta property="og:locale" content="fr_FR">
+<meta property="og:title" content="Plus d'avis Google pour votre commerce — TapBooster">
+<meta property="og:description" content="Vos clients sont déjà satisfaits. Aidez-les à laisser un avis Google depuis votre comptoir, en quelques secondes. Livrée et posée à La Réunion.">
+<meta property="og:image" content="img/og.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"TapBooster","description":"Plaques pour avis Google, réseaux et visibilité locale, livrées et posées à La Réunion.","url":"https://www.tapbooster.re","telephone":"+262693003886","email":"contact@tapbooster.re","areaServed":"Réunion","address":{"@type":"PostalAddress","streetAddress":"24 rue de Kerguelen","addressLocality":"Saint-Pierre","postalCode":"97410","addressRegion":"La Réunion","addressCountry":"RE"}}
+</script>
+<!-- ROADMAP routes : one-page aujourd'hui (ancres). À migrer en pages dédiées + redirections 301 : #comment→/comment-ca-marche · #solutions→/nos-plaques · #apropos→/a-propos · #contact→/contact. Futures : /ressources /etudes /outils /diagnostic. cf. mémoire tapbooster-site-architecture. -->
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="tb.css">
+</head>
+<body class="has-sticky">
+
+<!-- ============ HEADER ============ -->
+<header class="hdr">
+  <input type="checkbox" id="mnav" class="menu-chk">
+  <div class="wrap hdr-in">
+    <a href="index.html" class="brand" aria-label="TapBooster — accueil">
+      <svg viewBox="0 0 64 64" width="30" height="30" aria-hidden="true"><g stroke="#D89A2B" fill="none" stroke-linecap="round"><path d="M24 30A8 8 0 0040 30" stroke-width="2.5"/><path d="M16 30A16 16 0 0048 30" stroke-width="2.5"/><path d="M8 30A24 24 0 0056 30" stroke-width="2.5"/><line x1="32" y1="30" x2="32" y2="58" stroke-width="3"/></g></svg>
+      <span><span class="wm"><span class="t">Tap</span><span class="b">Booster</span></span></span>
+    </a>
+    <nav class="nav">
+      <a href="#comment">Comment ça marche</a>
+      <a href="#local">Pour qui</a>
+      <a href="#solutions">Nos plaques</a>
+      <a href="#apropos">À propos</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="hdr-cta">
+      <a href="tel:+262693003886" class="hdr-tel" aria-label="Appeler TapBooster au 06 93 00 38 86">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.24.2 2.45.58 3.6a1 1 0 0 1-.24 1l-2.24 2.2Z"/></svg>
+        <span class="hdr-tel-num">0693&nbsp;00&nbsp;38&nbsp;86</span>
+      </a>
+      <a href="#rappel" class="btn btn-primary" style="padding:11px 18px;font-size:14.5px">Être rappelé</a>
+      <label for="mnav" class="menu-tgl" id="menu-tgl" aria-label="Ouvrir le menu" aria-controls="mob-nav" aria-expanded="false" role="button" tabindex="0">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#1A1A1A" stroke-width="2.2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+      </label>
+    </div>
+  </div>
+  <nav class="mob-nav" id="mob-nav">
+    <a href="#comment">Comment ça marche</a>
+    <a href="#local">Pour qui</a>
+    <a href="#solutions">Nos plaques</a>
+    <a href="#apropos">À propos</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="local-tag"><span class="dot"></span>Île de La Réunion</span>
+      <h1>Vos clients sont déjà satisfaits.<br><span class="gold">Aidez-les à le montrer.</span></h1>
+      <p class="lead"><b>Chaque jour, des avis 5&nbsp;étoiles vous échappent.</b> En moins de 3&nbsp;secondes, vos clients peuvent laisser un avis Google depuis votre comptoir.</p>
+      <div class="hero-cta">
+        <a href="#rappel" class="btn btn-primary btn-lg">Être rappelé
+          <svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.24.2 2.45.58 3.6a1 1 0 0 1-.24 1l-2.24 2.2Z"/></svg>
+        </a>
+        <a href="#comment" class="link2">Voir comment ça fonctionne</a>
+      </div>
+      <p class="reassure-line"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Compatible iPhone &amp; Android <span class="sep">·</span> Sans abonnement <span class="sep">·</span> Installation rapide</p>
+    </div>
+    <div class="hero-visual">
+      <div class="hero-photo">
+        <img src="img/hero.jpg" alt="Un client approche son téléphone de la plaque TapBooster posée à plat sur le comptoir d'un bar à jus de fruits à La Réunion, la commerçante souriante en arrière-plan" loading="eager" fetchpriority="high">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROBLÈME ============ -->
+<section class="bg-paper2">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Le constat</span>
+      <h2>Vos clients apprécient votre travail.<br>Mais ils oublient de laisser un avis.</h2>
+    </div>
+    <div class="prob-grid">
+      <div class="prob"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6 6 18M6 6l12 12"/></svg></span><div><b>Ils repartent contents…</b><p>mais l'avis ne se fait jamais. Le moment est passé.</p></div></div>
+      <div class="prob"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><b>Le quotidien reprend</b><p>« je le ferai plus tard »… et puis on oublie.</p></div></div>
+      <div class="prob"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2Z"/></svg></span><div><b>Demander de vive voix gêne</b><p>on n'ose pas, ou on a peur d'insister.</p></div></div>
+      <div class="prob"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1 1"/><path d="M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1-1"/></svg></span><div><b>Le lien envoyé est ignoré</b><p>noyé dans les messages, jamais ouvert.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ BOUCHE-À-OREILLE NUMÉRIQUE ============ -->
+<section>
+  <div class="wrap wom">
+    <div>
+      <span class="eyebrow">La bonne nouvelle</span>
+      <h2>Le bouche-à-oreille est devenu numérique.</h2>
+      <p class="lead" style="margin-top:16px">Avant, un client satisfait parlait de vous à quelques proches. Aujourd'hui, un seul avis Google peut rassurer <b>tous ceux qui vous cherchent en ligne</b> — avant même qu'ils poussent votre porte.</p>
+    </div>
+    <div class="flow">
+      <div class="node"><span class="n"><svg viewBox="0 0 24 24" width="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></svg></span>Un client satisfait</div>
+      <div class="arrow"></div>
+      <div class="node"><span class="n"><svg viewBox="0 0 24 24" width="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.6 6.6L22 9.3l-5 4.9 1.2 7L12 17.8 5.8 21l1.2-6.8-5-4.9 7.4-.7Z"/></svg></span>laisse un avis Google</div>
+      <div class="arrow"></div>
+      <div class="node"><span class="n"><svg viewBox="0 0 24 24" width="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3-7 10-7 10 7 10 7-3 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg></span>vos futurs clients le lisent</div>
+      <div class="arrow"></div>
+      <div class="node win"><span class="n"><svg viewBox="0 0 24 24" width="16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 7 13.5 15.5 8.5 10.5 2 17"/><path d="M16 7h6v6"/></svg></span>et choisissent votre commerce</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COMMENT ÇA FONCTIONNE ============ -->
+<section id="comment" class="anchor bg-paper2">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Comment ça fonctionne</span>
+      <h2>Un geste, trois secondes, un avis.</h2>
+      <p class="lead">Aucune application, aucune inscription. Votre client pose son téléphone sur la plaque — ou scanne le QR — et sa page d'avis Google s'ouvre, prête à recevoir son avis. Chacun laisse l'avis qu'il souhaite : nous ne filtrons aucun avis, en toute conformité.</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="num">ÉTAPE 1</div>
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="3" width="10" height="18" rx="2"/><path d="M19.5 8.5a5 5 0 0 1 0 7" stroke="#D89A2B"/><path d="M22 6a8 8 0 0 1 0 12" stroke="#D89A2B"/></svg></div>
+        <h3>Il pose son téléphone</h3>
+        <p>Sur la plaque, au comptoir. Ou il scanne le QR code — l'un ou l'autre, c'est selon le téléphone.</p>
+      </div>
+      <div class="step">
+        <div class="num">ÉTAPE 2</div>
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 8v8M8 12h8"/></svg></div>
+        <h3>Votre page d'avis s'ouvre</h3>
+        <p>Directement la vôtre, sur Google. Rien à chercher, rien à taper.</p>
+      </div>
+      <div class="step">
+        <div class="num">ÉTAPE 3</div>
+        <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.6 6.6L22 9.3l-5 4.9 1.2 7L12 17.8 5.8 21l1.2-6.8-5-4.9 7.4-.7Z"/></svg></div>
+        <h3>Il laisse son avis</h3>
+        <p>En quelques secondes, tant qu'il est content et encore chez vous.</p>
+      </div>
+    </div>
+    <div class="center" style="margin-top:30px">
+      <a href="#solutions" class="btn btn-ghost btn-auto btn-block">Voir nos plaques</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTION LOCALE ============ -->
+<section id="local" class="anchor">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Pour qui</span>
+      <h2>Pensé pour les commerces de La Réunion.</h2>
+      <p class="lead">Au bon endroit, au bon moment — là où votre client est encore satisfait.</p>
+    </div>
+    <div class="sectors">
+      <div class="sector"><div class="ph"><img src="img/ctx-resto.jpg" alt="Snack créole — plaque sur le comptoir" loading="lazy"></div><div class="bd"><h3>Restaurant &amp; snack</h3><div class="place">Sur le comptoir, à l'addition</div><p>Au moment du paiement, quand le repas a plu.</p></div></div>
+      <div class="sector"><div class="ph"><img src="img/ctx-beaute.jpg" alt="Salon de coiffure réunionnais — plaque à l'accueil" loading="lazy"></div><div class="bd"><h3>Salon &amp; beauté</h3><div class="place">À l'accueil, après la prestation</div><p>Coiffure, esthétique, onglerie, barbier.</p></div></div>
+      <div class="sector"><div class="ph"><img src="img/ctx-hebergement.jpg" alt="Gîte réunionnais — plaque dans le livret d'accueil" loading="lazy"></div><div class="bd"><h3>Gîte &amp; location</h3><div class="place">Dans le livret d'accueil</div><p>À côté du QR Wi-Fi, pendant le séjour.</p></div></div>
+      <div class="sector"><div class="ph"><img src="img/ctx-commerce.jpg" alt="Épicerie réunionnaise — plaque sur le comptoir" loading="lazy"></div><div class="bd"><h3>Commerce &amp; service</h3><div class="place">Près de la caisse</div><p>Boutique, boulangerie, garage, artisan.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DIFFÉRENCIATION ============ -->
+<section class="bg-paper2">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Pourquoi TapBooster</span>
+      <h2>Plus qu'une plaque : une solution prête à l'emploi.</h2>
+      <p class="lead">Une plaque générique peut suffire si vous savez tout configurer vous-même. TapBooster est pensé pour les commerces qui veulent une solution simple, locale et accompagnée.</p>
+    </div>
+    <div class="diff">
+      <div class="diff-col gen">
+        <h3><span class="tag">Plaque générique</span></h3>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/></svg>Produit livré dans un carton</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/></svg>Configuration à faire soi-même</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/></svg>Pas d'installation sur place</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/></svg>Pas d'interlocuteur local</li>
+        </ul>
+      </div>
+      <div class="diff-col us">
+        <h3><span class="tag">Avec TapBooster</span></h3>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Plaque préparée &amp; lien configuré</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Livrée &amp; installée dans vos locaux</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Lien reconfigurable, sans abonnement</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Un interlocuteur péi, en toute conformité</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NOS SOLUTIONS ============ -->
+<section id="solutions" class="anchor">
+  <div class="wrap">
+    <div class="sec-head">
+      <span class="eyebrow">Nos plaques</span>
+      <h2>La solution adaptée à votre commerce.</h2>
+      <p class="lead">Tarifs de lancement, réservés aux premiers commerces de l'île.</p>
+    </div>
+    <div class="sols">
+      <div class="sol">
+        <h3>Plaque Avis Google</h3>
+        <div class="who">Pour récolter plus d'avis Google.</div>
+        <div class="price">49&nbsp;€ <small>puis 99&nbsp;€</small></div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Plaque 140×140 mm, noir mat effet argent</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Sans contact + QR de secours</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Lien Google configuré + posée chez vous</li>
+        </ul>
+        <a href="landing.html" class="btn btn-ghost btn-block">Réserver cette plaque</a>
+      </div>
+      <div class="sol reco">
+        <div class="ribbon">Notre recommandation</div>
+        <h3>Pack Visibilité+</h3>
+        <div class="who">Avis Google + Réseaux sociaux, tout inclus.</div>
+        <div class="price">89&nbsp;€ <small>puis 199&nbsp;€</small></div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Plaque Avis Google <b>+</b> Plaque Réseaux</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Livraison &amp; installation incluses</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Garantie 3 mois, sans abonnement</li>
+        </ul>
+        <a href="landing.html" class="btn btn-primary btn-block">Réserver le pack</a>
+      </div>
+      <div class="sol">
+        <h3>Plaque Réseaux</h3>
+        <div class="who">Pour développer Instagram &amp; Facebook.</div>
+        <div class="price">59&nbsp;€ <small>puis 119&nbsp;€</small></div>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Plaque 140×140 mm, noir mat effet argent</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Vers Instagram + Facebook</li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Liens configurés + posée chez vous</li>
+        </ul>
+        <a href="landing.html" class="btn btn-ghost btn-block">Réserver cette plaque</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ À PROPOS (court) ============ -->
+<section id="apropos" class="anchor bg-paper2">
+  <div class="wrap" style="max-width:760px;text-align:center">
+    <span class="eyebrow">Une entreprise péi</span>
+    <h2>Créée à La Réunion, pour les commerces de La Réunion.</h2>
+    <p class="lead" style="margin-top:16px">Nous avons lancé TapBooster pour aider les commerçants de l'île à rendre visible la satisfaction de leurs clients. On prépare la plaque, on configure le lien, on vient la poser chez vous — vous n'avez rien à faire.</p>
+  </div>
+</section>
+
+<!-- ============ CTA FINAL / CONTACT ============ -->
+<section id="contact" class="anchor cta-band">
+  <div class="wrap" style="max-width:680px">
+    <span class="eyebrow">Prêt ?</span>
+    <h2>Obtenez plus d'avis Google,<br>dès cette semaine.</h2>
+    <p class="lead" style="margin-top:14px">Pas de paiement en ligne : on en parle, on cale un rendez-vous, et on vient poser la plaque chez vous.</p>
+    <a href="https://wa.me/262693003886?text=Bonjour%20TapBooster%2C%20je%20souhaite%20r%C3%A9server%20ma%20plaque%20Avis%20Google." class="btn btn-primary btn-lg" style="margin-top:24px">
+      <svg viewBox="0 0 24 24" width="20" fill="#fff"><path d="M.06 24l1.69-6.16a11.87 11.87 0 1 1 4.43 4.39L.06 24ZM6.6 20.2l.37.22a9.86 9.86 0 1 0-3.34-3.32l.24.38-1 3.65 3.73-.93Z"/><path d="M9.5 6.9c-.2-.46-.42-.47-.62-.48h-.53a1 1 0 0 0-.74.35 3.1 3.1 0 0 0-.96 2.3c0 1.35.99 2.66 1.13 2.85s1.96 3 4.76 4.2c2.33 1 2.8.8 3.31.75s1.62-.66 1.85-1.3.23-1.18.16-1.3-.2-.18-.42-.3-1.32-.65-1.53-.72-.36-.12-.5.12-.59.72-.72.87-.26.16-.49.05a6.4 6.4 0 0 1-1.88-1.16 7.13 7.13 0 0 1-1.3-1.62c-.13-.23 0-.36.1-.47s.23-.27.35-.4a1.5 1.5 0 0 0 .23-.39.43.43 0 0 0 0-.4c-.06-.12-.5-1.36-.7-1.85Z" fill="#fff"/></svg>
+      Réserver ma plaque
+    </a>
+    <div class="assure">
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Garantie 3 mois</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Livrée &amp; posée chez vous</span>
+      <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>Sans abonnement</span>
+    </div>
+    <p class="disclaimer">Ou par e-mail : <a href="mailto:contact@tapbooster.re?subject=R%C3%A9servation%20plaque%20TapBooster" style="color:var(--ink-50);text-decoration:underline">contact@tapbooster.re</a></p>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="ftr">
+  <div class="wrap ftr-grid">
+    <div>
+      <span class="brand"><svg viewBox="0 0 64 64" width="26" height="26"><g stroke="#D89A2B" fill="none" stroke-linecap="round"><path d="M24 30A8 8 0 0040 30" stroke-width="2.5"/><path d="M16 30A16 16 0 0048 30" stroke-width="2.5"/><path d="M8 30A24 24 0 0056 30" stroke-width="2.5"/><line x1="32" y1="30" x2="32" y2="58" stroke-width="3"/></g></svg><span class="wm"><span class="t" style="color:#fff">Tap</span><span class="b" style="color:#fff">Booster</span></span></span>
+      <p>Plaques pour avis Google, réseaux &amp; visibilité locale.<br>Livrées, paramétrées et posées en main propre à La Réunion.</p>
+    </div>
+    <div>
+      <h4>Navigation</h4>
+      <a href="#comment">Comment ça marche</a>
+      <a href="#local">Pour qui</a>
+      <a href="#solutions">Nos plaques</a>
+      <a href="landing.html">Offre de lancement</a>
+    </div>
+    <div>
+      <h4>Contact</h4>
+      <a href="https://wa.me/262693003886">WhatsApp · 0693 00 38 86</a>
+      <a href="mailto:contact@tapbooster.re">contact@tapbooster.re</a>
+      <span style="display:block;font-size:14px;padding:5px 0">Zone : Île de La Réunion</span>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="legal">
+      <span>© 2026 TapBooster · Noam Zaddam (EI) · SIRET 939 884 946 00012 · TVA non applicable (art. 293 B CGI)</span>
+      <span style="display:flex;gap:14px"><a href="mentions-legales.html" style="display:inline;padding:0">Mentions légales</a><a href="mentions-legales.html#cgv" style="display:inline;padding:0">CGV</a><a href="mentions-legales.html#confidentialite" style="display:inline;padding:0">Confidentialité</a></span>
+    </div>
+    <div class="legal" style="border-top:none;margin-top:0;padding-top:6px"><span>TapBooster n'est pas affilié à Google. La plaque oriente vers votre fiche publique, en toute conformité.</span></div>
+  </div>
+</footer>
+
+<!-- ============ STICKY MOBILE CTA ============ -->
+<div class="sticky-cta">
+  <a href="tel:+262693003886" class="btn btn-ghost sticky-call" aria-label="Appeler le 06 93 00 38 86">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1c0 1.24.2 2.45.58 3.6a1 1 0 0 1-.24 1l-2.24 2.2Z"/></svg>
+    Appeler
+  </a>
+  <a href="#rappel" class="btn btn-primary">Être rappelé</a>
+</div>
+
+<script>
+  // mobile menu: keyboard + aria-expanded + close after navigating
+  var chk=document.getElementById('mnav'), tgl=document.getElementById('menu-tgl');
+  if(chk&&tgl){
+    var sync=function(){var o=chk.checked;tgl.setAttribute('aria-expanded',o?'true':'false');tgl.setAttribute('aria-label',o?'Fermer le menu':'Ouvrir le menu');};
+    chk.addEventListener('change',sync);
+    tgl.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();chk.checked=!chk.checked;sync();}});
+    document.querySelectorAll('.mob-nav a').forEach(function(a){a.addEventListener('click',function(){chk.checked=false;sync();});});
+  }
+  // hide the sticky reservation CTA when the final CTA (#contact) is on screen
+  var sticky=document.querySelector('.sticky-cta'), contact=document.getElementById('contact');
+  if(sticky&&contact&&'IntersectionObserver'in window){
+    sticky.style.transition='transform .25s ease';
+    new IntersectionObserver(function(es){es.forEach(function(en){sticky.style.transform=en.isIntersecting?'translateY(130%)':'translateY(0)';});},{threshold:0.2}).observe(contact);
+  }
+</script>
+</body>
+</html>
